@@ -5,12 +5,18 @@ import ReactSimpleShare from "../src/index";
 ReactDom.render(
   <div>
     <p>You rendered the ReactSimpleShare:</p>
-    <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" title="Lorem ipsum…" theme="minimal" />
-    <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" theme="round" />
-    <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" theme="roundedunfilled" />
-    <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" theme="roundedsquare" />
-    <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" theme="square" />
-    <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" theme="text" />
+    <b>Minimal icon:</b>
+      <ReactSimpleShare url="https://prettier.io" theme="minimal" />
+    <b>Round icon:</b>
+    <ReactSimpleShare url="https://prettier.io" theme="round" />
+    <b>Roundedunfilled icon:</b>
+    <ReactSimpleShare url="https://prettier.io" theme="roundedunfilled" />
+    <b>Roundedsquare icon:</b>
+    <ReactSimpleShare url="https://prettier.io" theme="roundedsquare" />
+    <b>Square icon:</b>
+    <ReactSimpleShare url="https://prettier.io" theme="square" />
+    <b>text:</b>
+    <ReactSimpleShare url="https://prettier.io" theme="text" />
   </div>,
   document.getElementById("app")
 );
