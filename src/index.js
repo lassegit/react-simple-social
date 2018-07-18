@@ -38,8 +38,8 @@ ReactSimpleShare.propTypes = {
 ReactSimpleShare.defaultProps = {
   sites: ['facebook', 'twitter', 'reddit', 'linkedin', 'email'],
   title: '',
-  width: '20',
-  height: '20',
+  width: '16',
+  height: '16',
   color: '#000',
   theme: 'minimal'
 }
