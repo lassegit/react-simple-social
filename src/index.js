@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import "./style.css";
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import './style.css'
 
-import { getShareIcon, getShareLink } from "./utils";
+import { getShareIcon, getShareLink } from './utils'
 
 export default class ReactSimpleShare extends Component {
   render() {
-    const { url, sites, width, height, color, theme, title } = this.props;
+    const { url, sites, width, height, color, theme, title } = this.props
     const links = sites.map(site => {
       return (
         <li key={site}>
@@ -14,14 +14,14 @@ export default class ReactSimpleShare extends Component {
             {getShareIcon(site, width, height, color, theme)}
           </a>
         </li>
-      );
-    });
+      )
+    })
 
     return (
       <div className="simple-share">
         <ul className="simple-share-list">{links}</ul>
       </div>
-    );
+    )
   }
 }
 
@@ -33,13 +33,13 @@ ReactSimpleShare.propTypes = {
   height: PropTypes.string,
   color: PropTypes.string,
   theme: PropTypes.string
-};
+}
 
 ReactSimpleShare.defaultProps = {
-  sites: ["facebook", "twitter", "reddit", "linkedin", "email"],
-  title: "",
-  width: "20",
-  height: "20",
-  color: "#000",
-  theme: "minimal"
-};
+  sites: ['facebook', 'twitter', 'reddit', 'linkedin', 'email'],
+  title: '',
+  width: '20',
+  height: '20',
+  color: '#000',
+  theme: 'minimal'
+}

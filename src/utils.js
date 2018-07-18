@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 
-import FacebookIcon from "./icons/facebook";
-import TwitterIcon from "./icons/twitter";
-import RedditIcon from "./icons/reddit";
-import LinkedinIcon from "./icons/linkedin";
-import EmailIcon from "./icons/email";
+import FacebookIcon from './icons/facebook'
+import TwitterIcon from './icons/twitter'
+import RedditIcon from './icons/reddit'
+import LinkedinIcon from './icons/linkedin'
+import EmailIcon from './icons/email'
 
 export const getShareIcon = (site, width, height, color, theme) => {
   switch (site) {
-    case "facebook":
+    case 'facebook':
       return (
         <FacebookIcon
           width={width}
@@ -16,8 +16,8 @@ export const getShareIcon = (site, width, height, color, theme) => {
           color={color}
           theme={theme}
         />
-      );
-    case "twitter":
+      )
+    case 'twitter':
       return (
         <TwitterIcon
           width={width}
@@ -25,12 +25,12 @@ export const getShareIcon = (site, width, height, color, theme) => {
           color={color}
           theme={theme}
         />
-      );
-    case "reddit":
+      )
+    case 'reddit':
       return (
         <RedditIcon width={width} height={height} color={color} theme={theme} />
-      );
-    case "linkedin":
+      )
+    case 'linkedin':
       return (
         <LinkedinIcon
           width={width}
@@ -38,35 +38,35 @@ export const getShareIcon = (site, width, height, color, theme) => {
           color={color}
           theme={theme}
         />
-      );
-    case "email":
+      )
+    case 'email':
       return (
         <EmailIcon width={width} height={height} color={color} theme={theme} />
-      );
+      )
   }
-};
+}
 
 export const getShareLink = (site, url, title) => {
   switch (site) {
-    case "facebook":
-      return `https://www.facebook.com/sharer.php?u=${encodeURIComponent(url)}`;
-    case "reddit":
+    case 'facebook':
+      return `https://www.facebook.com/sharer.php?u=${encodeURIComponent(url)}`
+    case 'reddit':
       return `https://reddit.com/submit?url=${encodeURIComponent(
         url
-      )}&title=${encodeURIComponent(title)}`;
-    case "twitter":
+      )}&title=${encodeURIComponent(title)}`
+    case 'twitter':
       return `https://twitter.com/intent/tweet?url=${encodeURIComponent(
         url
-      )}&text=${encodeURIComponent(title)}`;
-    case "linkedin":
+      )}&text=${encodeURIComponent(title)}`
+    case 'linkedin':
       return `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
         url
-      )}&text=${encodeURIComponent(title)}`;
-    case "email":
+      )}&text=${encodeURIComponent(title)}`
+    case 'email':
       return `mailto:?subject=${encodeURIComponent(
         title
-      )}&body=${encodeURIComponent(url)}`;
+      )}&body=${encodeURIComponent(url)}`
     default:
-      return "/";
+      return '/'
   }
-};
+}
