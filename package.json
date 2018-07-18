@@ -1,6 +1,6 @@
 {
   "name": "react-simple-social",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Add social share links through one simple and lightweight React component",
   "main": "./lib/index.js",
   "scripts": {
