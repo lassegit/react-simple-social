@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const LinkedinIcon = props => {
   const { width, height, color, theme } = props;
@@ -65,6 +66,13 @@ const LinkedinIcon = props => {
         </svg>
       );
   }
+};
+
+LinkedinIcon.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  color: PropTypes.string,
+  theme: PropTypes.string
 };
 
 export default LinkedinIcon;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const TwitterIcon = props => {
   const { width, height, color, theme } = props;
@@ -65,6 +66,13 @@ const TwitterIcon = props => {
         </svg>
       );
   }
+};
+
+TwitterIcon.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  color: PropTypes.string,
+  theme: PropTypes.string
 };
 
 export default TwitterIcon;
