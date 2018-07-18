@@ -11,38 +11,39 @@ It contains 5 inline SVG icon types; minimal, round, roundedunfilled, roundedsqu
 Install the package running:
 
 ```
-  npm i react-simple-social
-  
-  or
+npm i react-simple-social
+```
+Or
 
-  yarn add react-simple-social
+```
+yarn add react-simple-social
 ```
 
 Then use it in your React component:
 
-```
-  import React, { Component } from 'react';
+```javascript
+import React, { Component } from 'react';
 
-  import SocialShare from 'react-simple-social';
+import SocialShare from 'react-simple-social';
 
-  export class MyComponent extends Component {
-    render() {
-      return (
-        <div>
-          Hello world!
-          <SocialShare 
-            url="https://example.com/my-blog-post"
-            title="This is my blog post"
-            sites={['reddit', 'twitter', 'email']}
-            color='gray'
-            width="20"
-            height="20"
-            theme="minimal"
-          />
-        </div>
-      );
-    }
+export class MyComponent extends Component {
+  render() {
+    return (
+      <div>
+        Hello world!
+        <SocialShare 
+          url="https://example.com/my-blog-post"
+          title="This is my blog post"
+          sites={['reddit', 'twitter', 'email']}
+          color='gray'
+          width="20"
+          height="20"
+          theme="minimal"
+        />
+      </div>
+    );
   }
+}
 ```
 
 You can configure the following props:
