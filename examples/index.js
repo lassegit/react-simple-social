@@ -10,6 +10,7 @@ ReactDom.render(
     <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" theme="roundedunfilled" />
     <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" theme="roundedsquare" />
     <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" theme="square" />
+    <ReactSimpleShare url="https://prettier.io/docs/en/cli.html" theme="text" />
   </div>,
   document.getElementById("app")
 );
