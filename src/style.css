@@ -1,0 +1,7 @@
+.simple-share-list {
+  list-style: none;
+}
+  .simple-share-list li {
+    display: inline;
+    margin:0 5px 0 0;
+  }
