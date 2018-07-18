@@ -66,7 +66,7 @@ const RedditIcon = props => {
         </svg>
       )
     default:
-      return 'Reddit'
+      return <span>Reddit</span>
   }
 }
 

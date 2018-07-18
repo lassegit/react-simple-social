@@ -42,7 +42,7 @@ const EmailIcon = props => {
         </svg>
       )
     case 'text':
-      return 'Email'
+      return <span>Email</span>
     default:
       return (
         <svg

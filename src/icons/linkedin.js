@@ -66,7 +66,7 @@ const LinkedinIcon = props => {
         </svg>
       )
     default:
-      return 'LinkedIn'
+      return <span>LinkedIn</span>
   }
 }
 

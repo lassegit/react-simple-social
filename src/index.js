@@ -18,9 +18,9 @@ export default class ReactSimpleShare extends Component {
     })
 
     return (
-      <div className="simple-share">
+      <span className="simple-share">
         <ul className="simple-share-list">{links}</ul>
-      </div>
+      </span>
     )
   }
 }

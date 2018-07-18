@@ -66,7 +66,7 @@ const TwitterIcon = props => {
         </svg>
       )
     default:
-      return 'Twitter'
+      return <span>Twitter</span>
   }
 }
 

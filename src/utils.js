@@ -44,7 +44,7 @@ export const getShareIcon = (site, width, height, color, theme) => {
         <EmailIcon width={width} height={height} color={color} theme={theme} />
       )
     default:
-      return null
+      return <span />
   }
 }
 

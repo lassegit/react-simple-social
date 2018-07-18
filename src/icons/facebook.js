@@ -66,7 +66,7 @@ const FacebookIcon = props => {
         </svg>
       )
     default:
-      return 'Facebook'
+      return <span>Facebook</span>
   }
 }
 
