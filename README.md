@@ -1,6 +1,6 @@
 ## Add social share links through one simple and lightweight React component
 
-A simple React component that adds React share links with SVG icons in your selected color. You don't have to add an `<Twittershare /> <FacebookShare /> <RedditShare />...` for each, instead you add the react-simple-social component: `<SocialShare sites={['facebook', 'twitter', 'reddit', 'linkedin', 'email']} />` and specify which share links it shall contain as a prop. And its lightweight and should work with React version 15 and 16. 
+A simple React component that adds React share links with SVG icons in your selected color. You don't have to add an `<Twittershare /> <FacebookShare /> <RedditShare />...` for each service you want to share to. Instead you add the react-simple-social component once: `<SocialShare sites={['facebook', 'twitter', 'reddit', 'linkedin', 'email']} />` and specify which share links it shall contain as a prop. And its lightweight and should work with React version 15 and 16.
 
 It contains 5 inline SVG icon types; minimal, round, roundedunfilled, roundedsquare, square and text. These can be passed as props to the component. They look like and are all taken from iconmonstr.com:
 
