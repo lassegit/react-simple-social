@@ -1,6 +1,6 @@
-## Add various social share links through one simple React component
+## Add social share links through one simple and lightweight React component
 
-A simple React component that adds React share links with SVG icons in your selected color. It has limited configuration options and mainly serves as a quick and easy way to add the obligatory social share links to help promote your React app. And its lightweight.
+A simple React component that adds React share links with SVG icons in your selected color. It has limited configuration options and mainly serves as a quick and easy way to add the obligatory social share links to help promote your React app. And its lightweight and should work with React version 15 and 16.
 
 It contains 5 inline SVG icon types; minimal, round, roundedunfilled, roundedsquare, square and text. These can be passed as props to the component. They look like and are all taken from iconmonstr.com:
 
@@ -57,7 +57,8 @@ You can configure the following props:
 | color  | color of the icon                                                                                                        |
 | theme  | which of the icon theme to use (or raw text) possibilities: minimal, round, roundedunfilled, roundedsquare, square, text |
 
-##
+## Thanks
 
 Icons are from: http://iconmonstr.com
+
 Build using boilerplate: https://github.com/lassegit/npm-react-module

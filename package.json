@@ -1,7 +1,7 @@
 {
   "name": "react-simple-social",
-  "version": "1.0.1",
-  "description": "Add various social share links through one simple React component",
+  "version": "1.0.2",
+  "description": "Add social share links through one simple and lightweight React component",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -24,7 +24,7 @@
     "social share",
     "react"
   ],
-  "author": "Lasse",
+  "author": "Lasse T.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lassegit/react-simple-social/issues"
