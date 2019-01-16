@@ -1,6 +1,6 @@
 {
   "name": "react-simple-social",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Add social share links through one simple and lightweight React component",
   "main": "./lib/index.js",
   "scripts": {
@@ -15,18 +15,12 @@
     "lint:js": "./node_modules/eslint/bin/eslint.js . --cache",
     "prepush": "yarn lint"
   },
-  "files": [
-    "lib",
-    "src"
-  ],
+  "files": ["lib", "src"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lassegit/react-simple-social"
   },
-  "keywords": [
-    "social share",
-    "react"
-  ],
+  "keywords": ["social share", "react"],
   "author": "Lasse T.",
   "license": "MIT",
   "bugs": {
