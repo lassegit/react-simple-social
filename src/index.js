@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { getShareIcon, getShareLink } from './utils'
-import './style.css'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { getShareIcon, getShareLink } from './utils';
+import './style.css';
 
 const ReactSimpleShare = ({ url, sites, width, height, color, theme, target, title }) => (
   <span className="simple-share">
@@ -15,7 +15,7 @@ const ReactSimpleShare = ({ url, sites, width, height, color, theme, target, tit
       ))}
     </ul>
   </span>
-)
+);
 
 ReactSimpleShare.defaultProps = {
   sites: ['facebook', 'twitter', 'reddit', 'linkedin', 'email'],
@@ -25,7 +25,7 @@ ReactSimpleShare.defaultProps = {
   color: '',
   theme: 'minimal',
   target: '_self',
-}
+};
 
 ReactSimpleShare.propTypes = {
   url: PropTypes.string.isRequired,
@@ -36,6 +36,6 @@ ReactSimpleShare.propTypes = {
   color: PropTypes.string,
   theme: PropTypes.string,
   target: PropTypes.oneOf(['_blank', '_self', '_parent', '_top', 'framename']),
-}
+};
 
-export default ReactSimpleShare
+export default ReactSimpleShare;

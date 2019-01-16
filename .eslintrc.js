@@ -2,19 +2,19 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        paths: ['src']
-      }
-    }
+        paths: ['src'],
+      },
+    },
   },
   extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['react', 'jsx-a11y', 'import', 'prettier', 'codebox'],
   globals: {
-    localStorage: true
+    localStorage: true,
   },
   parser: 'babel-eslint',
   env: {
     browser: true,
-    jest: true
+    jest: true,
   },
   rules: {
     'prettier/prettier': [
@@ -23,15 +23,15 @@ module.exports = {
         singleQuote: true,
         printWidth: 125,
         trailingComma: 'all',
-        semi: false
-      }
+        semi: true,
+      },
     ],
     'prefer-destructuring': [
       'error',
       {
         array: false,
-        object: true
-      }
+        object: true,
+      },
     ],
     'class-methods-use-this': 'off',
     'comma-dangle': 'off',
@@ -51,8 +51,8 @@ module.exports = {
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jsx']
-      }
+        extensions: ['.js', '.jsx'],
+      },
     ],
     'react/jsx-no-bind': 'off',
     'react/no-array-index-key': 'off',
@@ -69,22 +69,22 @@ module.exports = {
           'parent', // then parent
           'sibling', // ...ok, you got it
           'index',
-          ['unknown', 'absolute'] // An array inside array of groups means that these two groups share same priority for sorting
+          ['unknown', 'absolute'], // An array inside array of groups means that these two groups share same priority for sorting
         ],
         importTypes: [
           'default', // Default imports are at top of each group
           'named', // After that - named imports
           'all', // Imports of the whole namespace
-          'none' // Plain import
+          'none', // Plain import
         ],
-        ignoreCase: true // Indicates whether we want to ignore case during alphabetical sorting
-      }
+        ignoreCase: true, // Indicates whether we want to ignore case during alphabetical sorting
+      },
     ],
     'codebox/sort-named-imports': [
       'error',
       {
-        ignoreCase: true // Indicates whether we want to ignore case during alphabetical sorting
-      }
-    ]
-  }
-}
+        ignoreCase: true, // Indicates whether we want to ignore case during alphabetical sorting
+      },
+    ],
+  },
+};
