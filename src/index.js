@@ -10,7 +10,7 @@ export default class ReactSimpleShare extends Component {
     const links = sites.map(site => {
       return (
         <li key={site}>
-          <a href={getShareLink(site, url, title)}>
+          <a href={getShareLink(site, url, title)} target="_blank">
             {getShareIcon(site, width, height, color, theme)}
           </a>
         </li>
