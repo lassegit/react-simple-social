@@ -3,12 +3,14 @@ import React from 'react'
 import { getShareIcon, getShareLink } from './utils'
 import './style.css'
 
-const ReactSimpleShare = ({ url, sites, width, height, color, theme, title }) => (
+const ReactSimpleShare = ({ url, sites, width, height, color, theme, target, title }) => (
   <span className="simple-share">
     <ul className="simple-share-list">
       {sites.map(site => (
         <li key={site}>
-          <a href={getShareLink(site, url, title)}>{getShareIcon(site, width, height, color, theme)}</a>
+          <a href={getShareLink(site, url, title)} target={target}>
+            {getShareIcon(site, width, height, color, theme)}
+          </a>
         </li>
       ))}
     </ul>
@@ -22,6 +24,7 @@ ReactSimpleShare.defaultProps = {
   height: '16',
   color: '',
   theme: 'minimal',
+  target: '_self',
 }
 
 ReactSimpleShare.propTypes = {
@@ -32,6 +35,7 @@ ReactSimpleShare.propTypes = {
   height: PropTypes.string,
   color: PropTypes.string,
   theme: PropTypes.string,
+  target: PropTypes.oneOf(['_blank', '_self', '_parent', '_top', 'framename']),
 }
 
 export default ReactSimpleShare
