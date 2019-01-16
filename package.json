@@ -1,7 +1,8 @@
 {
   "name": "react-simple-social",
   "version": "1.0.5",
-  "description": "Add social share links through one simple and lightweight React component",
+  "description":
+    "Add social share links through one simple and lightweight React component",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -12,18 +13,12 @@
     "copy": "cp src/style.css lib/",
     "prepublish": "npm run clean && npm run build && npm run copy"
   },
-  "files": [
-    "lib",
-    "src"
-  ],
+  "files": ["lib", "src"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lassegit/react-simple-social"
   },
-  "keywords": [
-    "social share",
-    "react"
-  ],
+  "keywords": ["social share", "react"],
   "author": "Lasse T.",
   "license": "MIT",
   "bugs": {
@@ -57,6 +52,6 @@
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": ">=16.0.1"
   }
 }
