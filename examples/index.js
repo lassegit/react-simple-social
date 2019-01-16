@@ -6,7 +6,7 @@ ReactDom.render(
   <div>
     <p>You rendered the ReactSimpleShare:</p>
     <b>Minimal icon:</b>
-    <ReactSimpleShare url="https://prettier.io" theme="minimal" />
+    <ReactSimpleShare color="red" url="https://prettier.io" theme="minimal" />
     <b>Round icon:</b>
     <ReactSimpleShare url="https://prettier.io" theme="round" />
     <b>Roundedunfilled icon:</b>
